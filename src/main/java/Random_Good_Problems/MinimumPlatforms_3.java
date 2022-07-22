@@ -2,7 +2,7 @@ package main.java.Random_Good_Problems;
 
 import java.util.Arrays;
 
-public class MinimumPlatforms {
+public class MinimumPlatforms_3 {
 
 
    static int minimumPlatforms(int[] arr, int[] dep) {

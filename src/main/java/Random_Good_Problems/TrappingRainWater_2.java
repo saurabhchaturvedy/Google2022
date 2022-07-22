@@ -1,6 +1,6 @@
 package main.java.Random_Good_Problems;
 
-public class TrappingRainWater {
+public class TrappingRainWater_2 {
 
 
     private static int getTrappedWater(int[] arr, int n) {
