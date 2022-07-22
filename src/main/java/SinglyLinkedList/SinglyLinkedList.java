@@ -244,6 +244,25 @@ public class SinglyLinkedList {
         return head;
     }
 
+    private static boolean hasLoop(ListNode head)
+    {
+
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while (fast!=null && fast.next!=null)
+        {
+
+            slow=slow.next;
+            fast=fast.next.next;
+
+            if(fast==slow)
+                return true;
+        }
+
+        return false;
+    }
+
     public static void main(String[] args) {
         ListNode head = new ListNode(10);
         ListNode second = new ListNode(20);
@@ -296,6 +315,8 @@ public class SinglyLinkedList {
         head = remove(head, 20);
 
         print(head);
+
+        System.out.println("Linked List has a loop ? : "+hasLoop(head));
 
     }
 }
