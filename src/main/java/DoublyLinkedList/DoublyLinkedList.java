@@ -144,6 +144,28 @@ public class DoublyLinkedList {
 
     }
 
+    private void deleteAtIndex(int index)
+    {
+        if(index==0)
+        {
+            deleteFirst();
+        }
+
+        ListNode temp = head;
+        int count=0;
+
+        while (count<index-1)
+        {
+            temp=temp.next;
+            count++;
+        }
+
+        ListNode nextToTemp = temp.next;
+        temp.next = nextToTemp.next;
+        nextToTemp.next.previous=temp;
+
+    }
+
     public static void main(String[] args) {
 DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
         doublyLinkedList.head = new ListNode(10);
@@ -191,6 +213,10 @@ DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
         doublyLinkedList.printForward();
 
         doublyLinkedList.deleteLast();
+
+        doublyLinkedList.printForward();
+
+        doublyLinkedList.deleteAtIndex(3);
 
         doublyLinkedList.printForward();
 
