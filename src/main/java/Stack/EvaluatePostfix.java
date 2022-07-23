@@ -47,6 +47,6 @@ public class EvaluatePostfix {
     public static void main(String[] args) {
 
 
-        System.out.println(evaluate("2 3 1 * + 9 -"));
+        System.out.println(evaluate("57+67+*"));
     }
 }
