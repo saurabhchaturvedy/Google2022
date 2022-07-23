@@ -1,5 +1,7 @@
 package main.java.BinaryTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class BinaryTree {
@@ -118,6 +120,29 @@ public class BinaryTree {
         }
     }
 
+
+    private void levelorder(TreeNode root) {
+        if (root == null) return;
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode temp = queue.poll();
+
+            System.out.print(temp.data + " ");
+
+            if (temp.left != null) {
+                queue.offer(temp.left);
+            }
+
+            if (temp.right != null) {
+
+                queue.offer(temp.right);
+            }
+        }
+    }
+
     public static void main(String[] args) {
 
         BinaryTree binaryTree = new BinaryTree();
@@ -143,5 +168,9 @@ public class BinaryTree {
         System.out.println();
 
         binaryTree.postorderIterative(binaryTree.root);
+
+        System.out.println();
+
+        binaryTree.levelorder(binaryTree.root);
     }
 }
