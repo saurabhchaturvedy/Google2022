@@ -7,11 +7,11 @@ public class SinglyLinkedList {
 
     private ListNode head;
 
-    private static class ListNode {
-        private int data;
-        private ListNode next;
+     public static class ListNode {
+        public int data;
+        public ListNode next;
 
-        ListNode(int data) {
+        public ListNode(int data) {
             this.data = data;
             this.next = null;
         }
@@ -156,7 +156,7 @@ public class SinglyLinkedList {
     }
 
 
-    private static ListNode reverse(ListNode head) {
+    public static ListNode reverse(ListNode head) {
         if (head == null) return null;
         ListNode current = head;
         ListNode previous = null;

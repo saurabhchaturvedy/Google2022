@@ -2,7 +2,7 @@ package main.java.Random_Good_Problems;
 
 import java.util.Arrays;
 
-public class ThreeSum_8 {
+public class ThreeSum_9 {
 
 
     private static void threeSum(int[] arr, int target) {
