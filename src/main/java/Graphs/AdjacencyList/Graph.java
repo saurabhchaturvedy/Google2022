@@ -2,6 +2,8 @@ package main.java.Graphs.AdjacencyList;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.Stack;
 
 public class Graph {
 
@@ -44,6 +46,49 @@ public class Graph {
         return sb.toString();
     }
 
+
+    private void bfs(int s) {
+        boolean[] visited = new boolean[V];
+
+        Queue<Integer> queue = new LinkedList<>();
+        visited[s] = true;
+        queue.offer(s);
+
+        while (!queue.isEmpty()) {
+            Integer u = queue.poll();
+            System.out.print(u + " ");
+
+            for (int w : adj[u]) {
+                if (!visited[w]) {
+                    visited[w] = true;
+                    queue.offer(w);
+                }
+            }
+        }
+    }
+
+    private void dfs(int s) {
+        boolean[] visited = new boolean[V];
+
+        Stack<Integer> stack = new Stack<>();
+        stack.push(s);
+
+        while (!stack.isEmpty()) {
+            Integer u = stack.pop();
+
+
+            if (!visited[u]) {
+                visited[u] = true;
+
+                System.out.print(u + " ");
+
+                for (int w : adj[u]) {
+                    stack.push(w);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Graph graph = new Graph(4);
         graph.addEdge(0, 1);
@@ -52,5 +97,9 @@ public class Graph {
         graph.addEdge(3, 0);
 
         System.out.println(graph);
+
+        graph.bfs(0);
+        System.out.println();
+        graph.dfs(0);
     }
 }
