@@ -18,5 +18,9 @@ public class TrieExecutor {
         trie.insert("saurabh", 15);
 
         System.out.println("value from trie is : " + trie.searchAssociative("saurabh"));
+
+        for (String str : trie.autocomplete("a")) {
+            System.out.print(str + " ");
+        }
     }
 }
