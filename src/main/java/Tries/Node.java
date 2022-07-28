@@ -7,6 +7,16 @@ public class Node {
     private boolean leaf;
     private boolean visited;
 
+    public Integer getValue() {
+        return value;
+    }
+
+    public void setValue(Integer value) {
+        this.value = value;
+    }
+
+    private Integer value;
+
     Node(String character) {
         this.character = character;
         this.children = new Node[Constants.ALPHABET_SIZE];

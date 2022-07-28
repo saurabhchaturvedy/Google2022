@@ -13,5 +13,10 @@ public class TrieExecutor {
 
 
         System.out.println("search in trie returned : " + trie.search("ba"));
+
+
+        trie.insert("saurabh", 15);
+
+        System.out.println("value from trie is : " + trie.searchAssociative("saurabh"));
     }
 }
