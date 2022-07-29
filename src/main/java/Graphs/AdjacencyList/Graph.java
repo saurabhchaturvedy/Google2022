@@ -89,6 +89,26 @@ public class Graph {
         }
     }
 
+
+    private void recursiveDFS() {
+        boolean[] visited = new boolean[V];
+        for (int v = 0; v < V; v++) {
+            if (!visited[v]) {
+                recursiveDFS(v, visited);
+            }
+        }
+    }
+
+    private void recursiveDFS(int v, boolean[] visited) {
+        visited[v] = true;
+        System.out.print(v+" ");
+        for (int w : adj[v]) {
+            if (!visited[w]) {
+                recursiveDFS(w, visited);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Graph graph = new Graph(4);
         graph.addEdge(0, 1);
@@ -101,5 +121,7 @@ public class Graph {
         graph.bfs(0);
         System.out.println();
         graph.dfs(0);
+        System.out.println("Recursive DFS :");
+        graph.recursiveDFS();
     }
 }
