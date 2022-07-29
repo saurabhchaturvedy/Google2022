@@ -101,10 +101,34 @@ public class Graph {
 
     private void recursiveDFS(int v, boolean[] visited) {
         visited[v] = true;
-        System.out.print(v+" ");
+        System.out.print(v + " ");
         for (int w : adj[v]) {
             if (!visited[w]) {
                 recursiveDFS(w, visited);
+            }
+        }
+    }
+
+
+    private void connectedDFS() {
+        boolean[] visited = new boolean[V];
+        int[] compId = new int[V];
+        int count = 0;
+        for (int v = 0; v < V; v++) {
+            if (!visited[v]) {
+                connectedDFS(v, visited, compId, count);
+                count++;
+            }
+        }
+    }
+
+    private void connectedDFS(int v, boolean[] visited, int[] compId, int count) {
+
+        visited[v] = true;
+        compId[v] = count;
+        for (int w : adj[v]) {
+            if (!visited[w]) {
+                connectedDFS(v, visited, compId, count);
             }
         }
     }
