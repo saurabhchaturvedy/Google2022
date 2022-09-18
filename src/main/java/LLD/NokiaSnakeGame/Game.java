@@ -59,11 +59,13 @@ public class Game {
                 Cell nextCell = getNextCell(snake.getHead());
 
                 if (snake.hasCollision(nextCell)) {
+                    System.out.println(" Collision has happened");
                     setDirection(DIRECTION_NONE);
                     gameOver = true;
                 } else {
                     snake.move(nextCell);
                     if (nextCell.getCellType() == CellType.FOOD) {
+                        System.out.println(" Snake has grown after eating food...");
                         snake.grow();
                         board.generateFood();
                     }
