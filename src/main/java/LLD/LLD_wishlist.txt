@@ -1,0 +1,19 @@
+
+1. Elevator 
+2. LRU Cache
+3. Logging
+4. Nokia Snake Game
+5. Parking Lot
+6. Rate Limiter
+7. Tic Tac Toe
+8. Snake And Ladder
+9. Book My Show
+10. Cab Booking 
+11. Bill Sharing App
+12. Composition over Inheritance - https://www.youtube.com/watch?v=ltENzdsbsdA&t=994s
+13 Flight Booking System - https://www.youtube.com/watch?v=5yEoh3toRyE
+14 Hotel Booking System - https://www.youtube.com/watch?v=6zZALeDMFew
+15 Distributed Id Generation
+16 Design TruCaller
+17 Visitor Pattern - https://github.com/gopalbala/gofpatterns/tree/master/src/main/java/com/gb/gofpatterns/behavioural/visitor/hospital
+18 Decorator Pattern -https://github.com/gopalbala/gofpatterns/blob/master/src/main/java/com/gb/gofpatterns/structural/decorator/vehiclerental/FestiveOfferDecorator.java
