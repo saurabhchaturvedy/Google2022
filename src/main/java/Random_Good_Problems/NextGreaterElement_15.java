@@ -3,7 +3,7 @@ package main.java.Random_Good_Problems;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class NextGreaterElement {
+public class NextGreaterElement_15 {
 
 
     private static int[] nextGreaterElement(int[] arr) {
