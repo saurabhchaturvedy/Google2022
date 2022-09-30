@@ -2,7 +2,7 @@ package main.java.Random_Good_Problems.Greedy;
 
 class RemoveKDigits {
 
-    public String removeKdigits(String num, int k) {
+    public static String removeKdigits(String num, int k) {
         String result = helper(num, k);
 
         // Remove leading 0s
@@ -18,7 +18,7 @@ class RemoveKDigits {
         return result;
     }
 
-    public String helper(String num, int k) {
+    public static String helper(String num, int k) {
         if (num == null || k < 0 || num.length() <= k) {
             return "";
         }
@@ -39,5 +39,10 @@ class RemoveKDigits {
             }
         }
         return candidate.substring(index, index + 1) + helper(num.substring(index + 1, m), k - index);
+    }
+
+    public static void main(String[] args) {
+        String str = "10200";
+        System.out.println(removeKdigits(str, 1));
     }
 }
