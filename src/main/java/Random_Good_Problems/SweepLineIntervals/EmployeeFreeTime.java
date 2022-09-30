@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 class EmployeeFreeTime {
     public static List<Interval> employeeFreeTime(List<List<Interval>> avails) {
         List<Interval> result = new ArrayList<>();
-        List<Interval> timeLine = new ArrayList<>();
+        List<Interval> timeLine;
         timeLine = avails.stream().flatMap(Collection::stream).collect(Collectors.toList());
         timeLine.sort(Comparator.comparing(i -> i.start));
 
