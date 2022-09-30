@@ -18,12 +18,12 @@ public class MergeIntervals {
 
         Interval last = null;
 
-        for (Interval i : intervals) {
-            if (last == null || last.end < i.start) {
-                answers.add(i);
-                last = i;
+        for (Interval interval : intervals) {
+            if (last == null || interval.start > last.end) {
+                answers.add(interval);
+                last = interval;
             } else {
-                last.end = Math.max(last.end, i.end);
+                last.end = Math.max(last.end, interval.end);
             }
         }
         return answers;
