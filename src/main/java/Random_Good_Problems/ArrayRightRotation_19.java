@@ -3,7 +3,7 @@ package main.java.Random_Good_Problems;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayRightRotation {
+public class ArrayRightRotation_19 {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 3, 4, 5 }; // 1, 2, 3, 4, 5
