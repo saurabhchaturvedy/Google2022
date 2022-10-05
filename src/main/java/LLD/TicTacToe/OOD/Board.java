@@ -20,7 +20,7 @@ public class Board {
     }
 
     public void printBoardStatus() {
-        System.out.println(" ----------------------");
+        System.out.println(" -----------------------------");
         for (int i = 0; i < noOfCell; i++) {
             for (int j = 0; j < noOfCell; j++) {
                 if(boxes[i][j].getPiece() == null){
@@ -30,7 +30,7 @@ public class Board {
                 }
             }
             System.out.println();
-            System.out.println(" ----------------------");
+            System.out.println(" -----------------------------");
         }
     }
 

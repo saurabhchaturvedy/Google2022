@@ -46,19 +46,18 @@ public class Game {
                 board.printBoardStatus();
                 return true;
             }
-            System.out.println(currentPlayer.getUserName() + " Please put valid move!");
+            System.out.println(currentPlayer.getName() + " Please put valid move!");
             board.printBoardStatus();
             return false;
         } else {
-            System.out.println(currentPlayer.getUserName() + " has already won the game! GAME IS OVER");
+            System.out.println(currentPlayer.getName() + " has already won the game! GAME IS OVER");
             board.printBoardStatus();
             return false;
         }
     }
 
     private boolean checkIfDraw(int row, int col) {
-        if (drl > cellCount || dlr > cellCount || arrCol[col] > cellCount || arrRow[row] > cellCount
-                || -cellCount > arrRow[row] || drl < -cellCount || dlr < -cellCount || arrCol[col] < -cellCount) {
+        if (drl > cellCount || dlr > cellCount || arrCol[col] > cellCount || arrRow[row] > cellCount || -cellCount > arrRow[row] || drl < -cellCount || dlr < -cellCount || arrCol[col] < -cellCount) {
 
             gameStatus = GameStatus.DRAW;
             System.out.println("Game has been finished with status DRAW!!");
@@ -68,7 +67,7 @@ public class Game {
     }
 
     private void changeTurn() {
-        if (currentPlayer.getUserId().equals(players[0].getUserId())) {
+        if (currentPlayer.getId().equals(players[0].getId())) {
             currentPlayer = players[1];
         } else {
             currentPlayer = players[0];
@@ -78,7 +77,7 @@ public class Game {
 
     private boolean checkIfWon(int row, int col) {
 
-        if (currentPlayer.getUserId().equals(players[0].getUserId())) {
+        if (currentPlayer.getId().equals(players[0].getId())) {
             if (row == col) {
                 dlr++;
             } else if (row + col == cellCount - 1) {
@@ -88,7 +87,7 @@ public class Game {
             arrCol[col] = arrCol[col] + 1;
             if (arrRow[row] == cellCount || arrCol[col] == cellCount || drl == cellCount || dlr == cellCount) {
                 gameStatus = GameStatus.WON;
-                System.out.println(currentPlayer.getUserName() + " has won the Game!!");
+                System.out.println(currentPlayer.getName() + " has won the Game!!");
                 return true;
             }
         } else {
@@ -101,7 +100,7 @@ public class Game {
             arrCol[col] = arrCol[col] - 1;
             if (arrRow[row] == -cellCount || arrCol[col] == -cellCount || drl == -cellCount || dlr == -cellCount) {
                 gameStatus = GameStatus.WON;
-                System.out.println(currentPlayer.getUserName() + " has won the Game!!");
+                System.out.println(currentPlayer.getName() + " has won the Game!!");
                 return true;
             }
 
