@@ -3,20 +3,20 @@ package main.java.DynamicProgramming;
 public class NthFibonacci_TopDown_Memoization {
 
 
-    static int fibonacci(int n, int[] memo) {
-        if (memo[n] == 0) {
+    static int fibonacci(int n, int[] cache) {
+        if (cache[n] == 0) {
 
             if (n < 2) {
-                memo[n] = n;
+                cache[n] = n;
             } else {
 
-                int left = fibonacci(n - 1, memo);
-                int right = fibonacci(n - 2, memo);
-                memo[n] = left + right;
+                int left = fibonacci(n - 1, cache);
+                int right = fibonacci(n - 2, cache);
+                cache[n] = left + right;
             }
 
         }
-        return memo[n];
+        return cache[n];
     }
 
 

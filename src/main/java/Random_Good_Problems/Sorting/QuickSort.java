@@ -29,6 +29,16 @@ public class QuickSort {
         return i + 1;
     }
 
+    public int KthLargest(int[] arr, int l, int r, int k) {
+
+        int pivotIndex = partition(arr, l, r);
+        if (pivotIndex == k - 1) return arr[pivotIndex];
+        if (pivotIndex > k - 1) return KthLargest(arr, l, r - 1, k);
+        if (pivotIndex < k - 1) return KthLargest(arr, l + 1, r, k);
+        return -1;
+
+    }
+
     private void swap(int[] arr, int i, int j) {
 
         int temp = arr[i];
@@ -42,5 +52,7 @@ public class QuickSort {
         QuickSort quickSort = new QuickSort();
         quickSort.quickSort(arr, 0, arr.length - 1);
         Arrays.stream(arr).forEach(System.out::println);
+        System.out.println();
+        System.out.println(quickSort.KthLargest(arr, 0, arr.length - 1, 3));
     }
 }
