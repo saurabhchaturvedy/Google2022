@@ -1,6 +1,6 @@
 package main.java.DynamicProgramming;
 
-public class NthFibonacci_BottomUp {
+public class NthFibonacci_BottomUp_Tabulation {
 
 
     static int fibonacci(int n) {
