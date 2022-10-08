@@ -1,6 +1,6 @@
-package main.java.Random_Good_Problems.Tries;
+package main.java.Random_Good_Problems;
 
-class TrappingRainWater__2 {
+class TrappingRainWater__2_24 {
     public int trap(int[] height) {
         int water = 0;
         int left = 0;
@@ -23,7 +23,7 @@ class TrappingRainWater__2 {
     }
 
     public static void main(String[] args) {
-        TrappingRainWater__2 trappingRainWater__2 = new TrappingRainWater__2();
+        TrappingRainWater__2_24 trappingRainWater__2 = new TrappingRainWater__2_24();
         System.out.println(trappingRainWater__2.trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
     }
 }
