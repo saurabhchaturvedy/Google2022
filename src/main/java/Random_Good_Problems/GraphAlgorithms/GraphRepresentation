@@ -1,0 +1,14 @@
+
+
+
+
+1 . ADJACENCY LIST : We assign a data structure (array) to every single vertex (node) in the graph that stores the edges accordingly .
+
+[edgeWeight,ConnectedVertex] [(4,C)(2,B)]
+
+Space efficient when dealing with sparse graphs but inefficient with dense ones
+
+
+2 . ADJACENCY MATRIX : Lets assume we have a G(V,E) graph with V vertices and E edges .
+
+We can construct an M matrix with size V*V where M[i][j] represents edge weight of going from node i to node j
