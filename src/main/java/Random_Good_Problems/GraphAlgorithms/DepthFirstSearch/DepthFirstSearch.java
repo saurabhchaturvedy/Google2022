@@ -34,4 +34,16 @@ public class DepthFirstSearch {
             }
         }
     }
+
+
+    private void dfsRecursive(Vertex vertex) {
+        System.out.print(vertex + " ");
+
+        for (Vertex v : vertex.getNeighbours()) {
+            if (!v.isVisited()) {
+                v.setVisited(true);
+                dfsRecursive(v);
+            }
+        }
+    }
 }
