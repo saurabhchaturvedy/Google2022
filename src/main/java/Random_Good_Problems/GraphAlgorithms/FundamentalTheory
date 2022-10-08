@@ -1,0 +1,29 @@
+
+
+1 . Graph Theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects .
+
+2 . A Graph G(V,E) is made up of V nodes (vertices) that are connected by E edges (links) .
+
+3 . There are mainly two types of graphs :
+
+(i.) Undirected Graphs : an undirected graph G(V,E) is a set of vertices and edges where the edges are bidirectional . It means that edge
+(u,v) is identical to edge (v,u) .
+
+(ii.) Directed Graph : an directed graph G(V,E) is a set of vertices and edges where the edges have directions . It means that edge
+                       (u,v) is not identical to edge (v,u) .
+
+Note : Edges may have their own weights as well !!
+
+GRAPH TYPES
+----------------
+
+
+TREE : Tree is an undirected graph where any two vertices are connected by exactly one path .
+
+FOREST : forest is an undirected graph , all of whose whose connected components are trees . (Disjoint union of trees)
+
+DIRECTED ACYCLIC GRAPH (DAG) : It is a finite directed graph with no cycles (crucial in many algorithms)
+
+If underlying graphs have no cycles , then many problems can be solved using graphs
+
+COMPLETE GRAPH : in complete graphs , every single pair of vertices are connected .
