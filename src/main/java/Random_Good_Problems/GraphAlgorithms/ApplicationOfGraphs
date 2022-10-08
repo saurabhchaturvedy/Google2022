@@ -1,0 +1,35 @@
+
+
+1 . SHORTEST PATH ALGORITHMS : are used on a daily basis (Google Maps, Waze etc.)
+
+* DijKstra's shortest path algorithm can find the shortest path between two or more locations quite fast .
+
+* Arbitarge opportunities on the FOREX can be detected with the help of Bellman-Ford Algorithm (detecting negative cycles)
+
+* Shortest path algorithms are used in photo editing software as well (Photoshop, GIMP)
+
+* Computer networks , Open Shortest Path First (OSPF) is a routing protocol for computer networks that helps to navigate packages
+on web
+
+
+2 . GOOGLE PAGE RANK ALGORITHM : Graph traversal algorithms (especially BFS) can traverse huge networks such as WWW
+
+-> this is how Google's spider crawls the webs and keeps indexing the web pages (page rank calculations)
+
+
+
+3. SOFTWARE ENGINEERING : Lets consider software project management such as Maven or Gradle
+
+Problem statement : That packages or modules (dependencies) may depend on each other , i.e the order of compilation is important .
+
+This problem can be reduced to the problem of cycles in a graph and directed acyclic graphs (DAGs)
+
+
+4. OPTIMIZATION PROBLEMS : Most of the quadratic optimization problems can be transformed into a graph theory related problem
+
+
+-> Maximum Flow Problem (max flow min cut problem)
+
+-> ciculation problem and airline scheduling
+
+-> vehicle routing problem etc .
