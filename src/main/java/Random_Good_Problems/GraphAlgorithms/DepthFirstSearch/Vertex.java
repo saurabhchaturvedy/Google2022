@@ -1,4 +1,4 @@
-package main.java.Random_Good_Problems.GraphAlgorithms.BreadthFirstSearch;
+package main.java.Random_Good_Problems.GraphAlgorithms.DepthFirstSearch;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -16,7 +16,7 @@ public class BreadthFirstSearch {
             Vertex visitedVertex = queue.poll();
             System.out.print(visitedVertex + " ");
 
-            for (Vertex v : visitedVertex.getAdjacencyList()) {
+            for (Vertex v : visitedVertex.getNeighbours()) {
                 if (!v.isVisited()) {
                     v.setVisited(true);
                     queue.add(v);
