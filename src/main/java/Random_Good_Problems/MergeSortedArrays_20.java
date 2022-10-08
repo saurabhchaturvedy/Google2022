@@ -2,7 +2,7 @@ package main.java.Random_Good_Problems;
 
 import java.util.Arrays;
 
-public class MergeSortedArrays {
+public class MergeSortedArrays_20 {
 
 
     static int[] mergeSortedArrays(int[] first, int[] second) {
