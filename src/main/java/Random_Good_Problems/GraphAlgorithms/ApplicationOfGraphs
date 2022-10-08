@@ -2,9 +2,9 @@
 
 1 . SHORTEST PATH ALGORITHMS : are used on a daily basis (Google Maps, Waze etc.)
 
-* DijKstra's shortest path algorithm can find the shortest path between two or more locations quite fast .
+* Dijkstra's shortest path algorithm can find the shortest path between two or more locations quite fast .
 
-* Arbitarge opportunities on the FOREX can be detected with the help of Bellman-Ford Algorithm (detecting negative cycles)
+* Arbitrage opportunities on the FOREX can be detected with the help of Bellman-Ford Algorithm (detecting negative cycles)
 
 * Shortest path algorithms are used in photo editing software as well (Photoshop, GIMP)
 
@@ -30,6 +30,6 @@ This problem can be reduced to the problem of cycles in a graph and directed acy
 
 -> Maximum Flow Problem (max flow min cut problem)
 
--> ciculation problem and airline scheduling
+-> circulation problem and airline scheduling
 
 -> vehicle routing problem etc .
