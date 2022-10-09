@@ -1,5 +1,7 @@
 package main.java.Random_Good_Problems.GraphAlgorithms.DepthFirstSearch;
 
+import main.java.Random_Good_Problems.GraphAlgorithms.TopologicalOrdering.Vertex;
+
 import java.util.List;
 import java.util.Stack;
 
