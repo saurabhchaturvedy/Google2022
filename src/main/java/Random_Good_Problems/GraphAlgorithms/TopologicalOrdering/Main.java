@@ -27,7 +27,7 @@ public class Main {
         graph.get(4).addNeighbour(graph.get(1));
         graph.get(3).addNeighbour(graph.get(1));
 
-
+// since there are directed edges , so we have to dfs per vertex
         for (int i = 0; i < graph.size(); i++) {
             if (!graph.get(i).isVisited()) {
                 topologicalOrdering.dfs(graph.get(i));
