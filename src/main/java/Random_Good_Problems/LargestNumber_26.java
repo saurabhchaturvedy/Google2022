@@ -1,4 +1,4 @@
-package main.java.Random_Good_Problems.Tries;
+package main.java.Random_Good_Problems;
 
 import java.util.Arrays;
 import java.util.Comparator;
