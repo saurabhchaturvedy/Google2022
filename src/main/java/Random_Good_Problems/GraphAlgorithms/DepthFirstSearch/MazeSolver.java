@@ -39,7 +39,7 @@ public class MazeSolver {
 
     private boolean dfs(int row, int col) {
 
-        if (row == maze.length - 1 || col == maze.length - 1) return true;
+        if (row == maze.length - 1 && col == maze.length - 1) return true;
 
         if (isFeasible(row, col)) {
             visited[row][col] = true;
