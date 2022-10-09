@@ -14,20 +14,20 @@ public class KthSmallestElement {
                 stack.push(node);
                 node = node.left;
             }
+
+
+            TreeNode top = stack.pop();
+            k--;
+
+            if (k == 0) {
+                node = top;
+                break;
+            } else {
+                node = top.right;
+            }
         }
 
-
-        TreeNode top = stack.pop();
-        k--;
-
-        if (k == 0) {
-            node = top;
-            return node.data;
-        } else {
-            node = top.right;
-        }
-
-        return null;
+        return node.data;
     }
 
 
