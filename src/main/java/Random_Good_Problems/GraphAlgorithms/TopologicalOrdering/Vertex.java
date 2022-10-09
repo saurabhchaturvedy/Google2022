@@ -1,4 +1,4 @@
-package main.java.Random_Good_Problems.GraphAlgorithms.DepthFirstSearch;
+package main.java.Random_Good_Problems.GraphAlgorithms.TopologicalOrdering;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Vertex {
     boolean visited;
     List<Vertex> neighbours;
 
-    Vertex(String name) {
+   public Vertex(String name) {
         this.name = name;
         this.neighbours = new ArrayList<>();
     }
