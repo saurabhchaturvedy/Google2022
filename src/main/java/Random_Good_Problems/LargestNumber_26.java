@@ -15,7 +15,9 @@ public class LargestNumber_26 {
             public int compare(Integer s1, Integer s2) {
                 String c1 = Integer.toString(s1) + Integer.toString(s2);
                 String c2 = Integer.toString(s2) + Integer.toString(s1);
-
+                System.out.println(c1);
+                System.out.println(c2);
+                System.out.println(-c1.compareTo(c2));
                 return -c1.compareTo(c2);
             }
         };
