@@ -2,7 +2,7 @@ package main.java.CodingSimplified_Nov2022.Array._10;
 
 import java.util.Arrays;
 
-public class InsertAtStart {
+public class _1_InsertAtStart {
 
 
     private static int[] insertAtStart(int[] arr, int val) {
