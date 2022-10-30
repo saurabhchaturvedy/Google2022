@@ -1,6 +1,6 @@
 package main.java.CodingSimplified_Nov2022.Array._30;
 
-public class CheckCycle {
+public class _21_CheckCycle {
 
 
     public static boolean hasCycle(int[] arr) {
