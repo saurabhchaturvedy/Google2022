@@ -1,5 +1,10 @@
 package main.java.Random_Good_Problems.RandomGoodProblems_2;
 
+//The algorithm works as follow:
+//        1. Scan each cell in the grid.
+//        2. If the cell value is '1', explored that island and start infection (DFS)
+//        3. Mark the explored island cells with 'x'.
+//        4. Once finished exploring that island, increment islands counter.
 class _2_NumIslands {
     public int numIslands(char[][] grid) {
         if (grid == null || grid.length == 0) {
