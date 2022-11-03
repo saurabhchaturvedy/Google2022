@@ -1,6 +1,6 @@
 package main.java.Random_Good_Problems.RandomGoodProblems_2;
 
-public class _4_ValidAnagram {
+public class _5_ValidAnagram {
 
 
     public static boolean validAnagram(String s, String t) {
