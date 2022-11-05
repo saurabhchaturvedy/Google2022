@@ -25,7 +25,7 @@ public class Add2Numbers {
         }
 
         if (carry > 0) {
-            temp = new ListNode(carry);
+            temp.next = new ListNode(1);
         }
 
         return reverse(fakeHead.next);
@@ -62,15 +62,15 @@ public class Add2Numbers {
 
         Add2Numbers add2Numbers = new Add2Numbers();
 
-        ListNode first = new ListNode(3);
-        ListNode second = new ListNode(9);
-        ListNode third = new ListNode(0);
+        ListNode first = new ListNode(2);
+        ListNode second = new ListNode(7);
+        ListNode third = new ListNode(2);
 
         first.next = second;
         second.next = third;
 
-        ListNode fourth = new ListNode(4);
-        ListNode fifth = new ListNode(5);
+        ListNode fourth = new ListNode(2);
+        ListNode fifth = new ListNode(9);
 
         fourth.next = fifth;
 
