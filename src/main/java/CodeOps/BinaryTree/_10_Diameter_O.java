@@ -13,6 +13,7 @@ public class _10_Diameter_O {
             Pair p = new Pair();
             p.height = -1;
             p.diameter = 0;
+            return p;
         }
 
         Pair leftPair = diameter(root.left);
