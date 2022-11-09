@@ -29,7 +29,7 @@ public class LongestSubstringWithoutRepeating_4 {
 
     public static void main(String[] args) {
 
-        String str="pwwkew";
+        String str="aabcftyurkkkyy";
 
         System.out.println("Longest substring without repeating characters is : "+longestSubstring(str));
     }
