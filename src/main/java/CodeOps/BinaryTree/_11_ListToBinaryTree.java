@@ -52,10 +52,10 @@ public class _11_ListToBinaryTree {
     public static void main(String[] args) {
 
         ListNode one = new ListNode(15);
-        ListNode two = new ListNode(15);
-        ListNode three = new ListNode(15);
-        ListNode four = new ListNode(15);
-        ListNode five = new ListNode(15);
+        ListNode two = new ListNode(17);
+        ListNode three = new ListNode(18);
+        ListNode four = new ListNode(19);
+        ListNode five = new ListNode(20);
 
         one.next = two;
         two.next = three;
