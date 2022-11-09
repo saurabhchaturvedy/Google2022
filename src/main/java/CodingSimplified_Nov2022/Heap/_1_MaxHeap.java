@@ -2,12 +2,12 @@ package main.java.CodingSimplified_Nov2022.Heap;
 
 import java.util.Arrays;
 
-public class MaxHeap {
+public class _1_MaxHeap {
 
     int heapSize;
     int[] heap;
 
-    MaxHeap(int capacity) {
+    _1_MaxHeap(int capacity) {
         heap = new int[capacity];
     }
 
@@ -74,7 +74,7 @@ public class MaxHeap {
     }
 
     public static void main(String[] args) {
-        MaxHeap maxHeap = new MaxHeap(4);
+        _1_MaxHeap maxHeap = new _1_MaxHeap(4);
         maxHeap.insert(7);
         maxHeap.insert(19);
         maxHeap.insert(13);
