@@ -30,6 +30,28 @@ public class _20_VerticalOrderTraversal {
     }
 
 
+    public void topView(TreeNode root, int hd, Map<Integer, TreeNode> map) {
+
+        if (root == null) {
+            return;
+        }
+        map.putIfAbsent(hd, root);
+        topView(root.left, hd - 1, map);
+        topView(root.right, hd + 1, map);
+    }
+
+
+    public void bottomView(TreeNode root, int hd, Map<Integer, TreeNode> map) {
+
+        if (root == null) {
+            return;
+        }
+        map.put(hd, root);
+        bottomView(root.left, hd - 1, map);
+        bottomView(root.right, hd + 1, map);
+    }
+
+
     public static void main(String[] args) {
 
         TreeNode root = new TreeNode(10);
@@ -48,5 +70,38 @@ public class _20_VerticalOrderTraversal {
         for (List<Integer> list : map.values()) {
             System.out.print(list);
         }
+
+
+        System.out.println("TOP VIEW : ");
+
+        for (List<Integer> list : map.values()) {
+            System.out.print(list.get(0) + " ");
+        }
+
+        Map<Integer, TreeNode> map2 = new TreeMap<>();
+        verticalOrderTraversal.topView(root, 0, map2);
+
+        System.out.println();
+
+        for (TreeNode node : map2.values()) {
+            System.out.print(node.data + " ");
+        }
+
+        Map<Integer, TreeNode> map3 = new TreeMap<>();
+        verticalOrderTraversal.bottomView(root, 0, map3);
+
+        System.out.println();
+
+        for (TreeNode node : map3.values()) {
+            System.out.print(node.data + " ");
+        }
+
+        System.out.println();
+        System.out.println("BOTTOM VIEW : ");
+
+        for (List<Integer> list : map.values()) {
+            System.out.print(list.get(list.size() - 1) + " ");
+        }
+
     }
 }
