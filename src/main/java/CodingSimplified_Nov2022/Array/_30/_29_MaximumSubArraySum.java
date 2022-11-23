@@ -64,7 +64,7 @@ public class _29_MaximumSubArraySum {
     public static void main(String[] args) {
 
         _29_MaximumSubArraySum maximumSubArraySum = new _29_MaximumSubArraySum();
-        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int[] arr = {-9,-6,-18,-2};
 
         System.out.println(maximumSubArraySum.maxSubArraySum2(arr));
 
