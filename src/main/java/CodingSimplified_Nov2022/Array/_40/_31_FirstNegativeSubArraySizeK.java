@@ -47,6 +47,47 @@ public class _31_FirstNegativeSubArraySizeK {
     }
 
 
+    public List<Integer> maxInEverySubArraySizeK(int[] arr, int k) {
+        if (arr.length == 0 || k < 0 || k > arr.length) {
+            return new ArrayList<>();
+        }
+
+        int i = 0;
+        int j = 0;
+        int n = arr.length;
+
+        List<Integer> list = new ArrayList<>();
+        Queue<Integer> queue = new LinkedList<>();
+
+        while (j < n) {
+            if (arr[j] > queue.peek()) {
+                if(!queue.isEmpty()) {
+                    queue.poll();
+                }
+                queue.offer(arr[j]);
+            }
+
+            if (j - i + 1 == k) {
+                if (!queue.isEmpty()) {
+                    list.add(queue.poll());
+                } else {
+                    list.add(0);
+                }
+                if (arr[i] < 0 && !queue.isEmpty()) {
+                    queue.poll();
+
+                }
+                i++;
+            }
+
+
+            j++;
+        }
+
+        return list;
+    }
+
+
     public static void main(String[] args) {
 
         int[] arr = {8, 1, -2, 2, -3, 6, 8, 1};
