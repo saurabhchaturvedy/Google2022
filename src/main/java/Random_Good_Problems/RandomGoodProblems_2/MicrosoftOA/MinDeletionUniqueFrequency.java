@@ -29,7 +29,7 @@ public class MinDeletionUniqueFrequency {
     }
 
     public static void main(String[] args) {
-        String str = "faafkfkmmmm";
+        String str = "aabbcc";
         System.out.println(minDeletions(str));
     }
 }
