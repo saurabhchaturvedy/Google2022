@@ -17,7 +17,9 @@ public class Subsets {
             for(int i = 0;i<index;i++){
                 List<Integer> subset = new ArrayList<>(subsets.get(i));
                 subset.add(n);
+                System.out.println(subset);
                 subsets.add(subset);
+                System.out.println(subsets);
             }
         }
         return subsets;
